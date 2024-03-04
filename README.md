@@ -33,7 +33,7 @@ gophish-docker/
 ## Setup Instructions
 
 1. Ensure Docker is installed on your system.
-2. Clone this repository: `git clone https://github.com/your-username/gophish-docker.git](https://github.com/boniyeamincse/GoPhish-Docker-Project.git`
+2. Clone this repository: git clone https://github.com/boniyeamincse/GoPhish-Docker-Project.git
 3. Navigate to the project directory: `cd gophish-docker`
 4. Customize NGINX and GoPhish configurations as needed.
 5. Build and run the Docker containers: `docker-compose up --build`
