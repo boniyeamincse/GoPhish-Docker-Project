@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  gophish:
+    build:
+      context: ./gophish  # Path to the directory containing the Dockerfile for GoPhish
+    ports:
+      - "3333:3333"   # Adjust port mapping as necessary
+    volumes:
+      - ./gophish/data:/etc/gophish   # Map data volume for persistence
+
+  nginx:
+    build:
+      context: ./nginx  # Path to the directory containing the NGINX configuration
+    ports:
+      - "80:80"   # Map NGINX port
+    depends_on:
+      - gophish
